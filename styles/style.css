@@ -136,3 +136,39 @@ hr {
   color: #ff4a60;
   background-color: #f8324949;
 }
+/* Media query */
+@media only screen and (max-width: 688px) {
+  .h-title {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 100%;
+  }
+  .top-players {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .players,
+  .blogs {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    flex-direction: column;
+  }
+  .parent-course {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .main {
+    width: 100%;
+    margin-left: 50px;
+  }
+}
